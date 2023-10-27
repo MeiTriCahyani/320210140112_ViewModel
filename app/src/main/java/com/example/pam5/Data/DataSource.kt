@@ -6,4 +6,5 @@ object DataSource {
         R.string.laki,
         R.string.wanita,
     )
+
 }
