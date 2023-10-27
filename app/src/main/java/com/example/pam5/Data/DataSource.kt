@@ -6,5 +6,8 @@ object DataSource {
         R.string.laki,
         R.string.wanita,
     )
-
+    val sttus = listOf(
+        R.string.blmnikah,
+        R.string.nikah
+    )
 }
