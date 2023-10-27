@@ -170,7 +170,7 @@ fun SelectSTS(
 ){
     var selectedValue by rememberSaveable { mutableStateOf("") }
 
-    Row (modifier = Modifier.padding(16.dp)){
+    Row (modifier = Modifier.padding(10.dp)){
             Text(text = "Status:" )
         options.forEach {item ->
             Row (modifier = Modifier.selectable(selected = selectedValue==item,
@@ -199,7 +199,7 @@ fun SelectJK(
 ){
     var selectedValue by rememberSaveable { mutableStateOf("") }
 
-    Row (modifier = Modifier.padding(16.dp))
+    Row (modifier = Modifier.padding(10.dp))
     {
         Text(text = "Jenis Kelamin:")
         options.forEach {item ->
