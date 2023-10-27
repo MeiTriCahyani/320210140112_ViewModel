@@ -4,6 +4,6 @@ import com.example.pam5.R
 object DataSource {
     val jenis = listOf(
         R.string.laki,
-        R.string.wanita
+        R.string.wanita,
     )
 }
