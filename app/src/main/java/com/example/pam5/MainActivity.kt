@@ -155,8 +155,6 @@ fun TampilForm(cobaViewModel: CobaViewModel= viewModel()){
     }
     Spacer(modifier = Modifier.height(2.dp))
     TextHasil(
-        namanya = cobaViewModel.namaUsr,
-        telponnya = cobaViewModel.noTlp,
         emailnya = cobaViewModel.emailusr,
         jenisnya = cobaViewModel.jenisKl,
         statusnya = cobaViewModel.statususr,
@@ -225,27 +223,20 @@ fun SelectJK(
 }
 
 @Composable
-fun TextHasil(namanya: String, telponnya:String, emailnya: String, jenisnya:String, statusnya : String, alamatnya : String) {
+fun TextHasil(emailnya: String, jenisnya:String, statusnya : String, alamatnya : String) {
     ElevatedCard (
         elevation = CardDefaults.cardElevation(
             defaultElevation = 6.dp
         ),
         modifier = Modifier.fillMaxWidth()
     ){
-        Text(
-            text = "Nama:" + namanya,
-            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
-        )
-        Text(text = "Telepon:" + telponnya,
-            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
-            )
-        Text(text = "Email:" + emailnya,
-            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
-        )
         Text(text = "Jenis kelamin:" + jenisnya,
             modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
         )
         Text(text = "Status:" + statusnya,
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
+        )
+        Text(text = "Email:" + emailnya,
             modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
         )
         Text(text = "Alamat:" + alamatnya,
