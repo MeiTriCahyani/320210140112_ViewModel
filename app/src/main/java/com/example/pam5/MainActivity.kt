@@ -93,8 +93,7 @@ fun TampilForm(cobaViewModel: CobaViewModel= viewModel()){
     dataFrom = uiState
     Column(horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.left), contentDescription = "",
-            modifier = Modifier.size(5.dp))
+
         Text(text = "Register", fontSize = 20.sp, fontWeight = FontWeight.Bold,)
     }
     Text(text = "Create Your Account", fontSize = 30.sp, fontWeight = FontWeight.Bold)
